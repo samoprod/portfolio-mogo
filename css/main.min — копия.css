@@ -4505,6 +4505,208 @@ hr {
  	clip: auto
  }
 
+
+header {
+    height: 100vh;
+    min-height: 700px;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f38181;
+    z-index: 100;
+    position: relative;
+    overflow: hidden
+}
+
+header .top-menu {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease
+}
+
+header .fixedtop {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 50px;
+    background-color: rgba(51, 51, 51, .95);
+    z-index: 9999;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    line-height: 50px;
+    height: 50px
+}
+
+header .fixedtop .hamburger {
+    line-height: 50px!important;
+    margin-top: 5px!important;
+    height: 50px!important
+}
+
+header .fixedtop .logo {
+    line-height: 50px;
+    height: 50px
+}
+
+header .fixedtop .nav li {
+    line-height: 50px;
+    height: 50px
+}
+
+header .fixedtop .nav li a {
+    line-height: 50px;
+    height: 50px
+}
+
+header .fixedtop .icons-hdr li {
+    line-height: 50px;
+    height: 50px
+}
+
+header .fixedtop .icons-hdr li a {
+    line-height: 50px;
+    height: 50px
+}
+
+header:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f38181;
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #f38181), color-stop(100%, #fce388));
+    background: -webkit-linear-gradient(top, #f38181 0, #fce388 100%);
+    background: -o-linear-gradient(top, #f38181 0, #fce388 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce388));
+    background: linear-gradient(to bottom, #f38181 0, #fce388 100%);
+    z-index: -1;
+    opacity: .9
+}
+
+header .logo {
+    float: left;
+    margin: 0;
+    line-height: 70px
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-family: monsterrat-ex, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease
+}
+
+header .logo a:hover {
+    color: #fce38a
+}
+
+header .right-side {
+    float: right;
+    text-align: right
+}
+
+header .right-side>ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 70px;
+    font-family: monsterrat-ex, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+header .right-side>ul.icons-hdr {
+    font-size: 16px
+}
+
+header .right-side>ul li {
+    float: left;
+    line-height: 70px;
+    height: 70px;
+    position: relative
+}
+
+header .right-side>ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease
+}
+
+header .right-side>ul li a.active {
+    color: #fce38a
+}
+
+header .right-side>ul li a.active:after,
+header .right-side>ul li a.active:before {
+    width: 25%
+}
+
+header .right-side>ul li a:hover {
+    color: #fce38a
+}
+
+header .right-side>ul li a:hover:after,
+header .right-side>ul li a:hover:before {
+    width: 25%
+}
+
+header .right-side>ul li a:before {
+    float: right;
+    position: absolute;
+    content: " ";
+    left: 40%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: #fce38a;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    display: block
+}
+
+header .right-side>ul li a:after {
+    float: left;
+    position: absolute;
+    content: " ";
+    right: 40%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: #fce38a;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    display: block
+}
+
+
+
  .slick-slider {
  	position: relative;
  	display: block;
